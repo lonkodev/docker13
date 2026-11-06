@@ -17,7 +17,8 @@ jobs:
           test -f app/index.php
           test -f Dockerfile
           test -f docker-compose.yml
-          
+      - name: configuracion compose
+        run: docker compose config -q
 
 
 
